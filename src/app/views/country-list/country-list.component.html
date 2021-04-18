@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="jumbotron mb-3">
+      <div class="text-center">
+      <h2 class="display-4">Lista de Países</h2>
+      </div>
+    </div>
+    <button (click)="add()" type="button" class="btn btn-outline-primary">+ Adicionar Novo Pais</button>
+  
+    <table class="table">
+      <thead>
+        <tr>
+         
+          <th scope="row">ID</th>
+          <th scope="row">Nome</th>
+          <th scope="row">Capital</th>
+          <th scope="row">Região</th>
+          <th scope="row">Sub-Região</th>
+          <th scope="row">Área</th>
+          <th scope="row"></th>
+          <th scope="row"></th>
+
+
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let c of listCountries">
+          <tr>
+           
+
+            <td>{{ c.id }}</td>
+            <td>{{ c.name | uppercase }}</td>
+            <td>{{ c.capital | uppercase }}</td>
+            <td>{{ c.region | uppercase }}</td>
+            <td>{{ c.subRegion | uppercase }}</td>
+            <td>{{ c.area  }}  km2</td>
+            <td>
+              
+           
+              <button (click)="edit(c.id)" type="button" class="btn btn-outline-primary">Editar</button>
+            </td>
+            <td>
+              <button (click)="remove(c.id)" type="button" class="btn btn-outline-danger">Remover</button>
+            </td>
+          </tr>
+        </ng-container>
+      </tbody>
+    </table>
+  </div>
+  
