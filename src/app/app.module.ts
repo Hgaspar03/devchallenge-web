@@ -12,6 +12,7 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
 import { HomeComponent } from './views/home/home.component';
 import { ErrorComponent } from './views/error/error.component';
 import { CnNavbarComponent } from './views/cn-navbar/cn-navbar.component';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [

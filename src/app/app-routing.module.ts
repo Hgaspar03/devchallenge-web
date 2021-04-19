@@ -9,7 +9,7 @@ import { ErrorComponent } from './views/error/error.component';
 const routes: Routes = [
   {
     path: '',
-    component: HomeComponent
+    component:  CountryListComponent
   },
   {
     path: 'countryForm',
@@ -25,7 +25,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    component: HomeComponent
+    component: NotFoundComponent
   },
   {
     path: 'error',

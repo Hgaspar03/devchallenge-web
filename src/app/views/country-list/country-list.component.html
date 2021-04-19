@@ -1,23 +1,23 @@
 <div class="container">
-    <div class="jumbotron mb-3">
+    <div class="jumbotron mb-2">
       <div class="text-center">
-      <h2 class="display-4">Lista de Países</h2>
+      <h2 class="display-3">Lista de Países</h2>
       </div>
     </div>
     <button (click)="add()" type="button" class="btn btn-outline-primary">+ Adicionar Novo Pais</button>
-  
-    <table class="table">
+    <div class="table-responsive">
+    <table class="table table-hover ">
       <thead>
         <tr>
          
-          <th scope="row">ID</th>
-          <th scope="row">Nome</th>
-          <th scope="row">Capital</th>
-          <th scope="row">Região</th>
-          <th scope="row">Sub-Região</th>
-          <th scope="row">Área</th>
-          <th scope="row"></th>
-          <th scope="row"></th>
+          <th scope="row" sortable="id">ID</th>
+          <th scope="row" sortable="name">Nome</th>
+          <th scope="row" sortable="capital">Capital</th>
+          <th scope="row" sortable="region">Região</th>
+          <th scope="row" sortable="subRegion">Sub-Região</th>
+          <th scope="row" sortable="area">Área</th>
+          <th scope="row" ></th>
+          <th scope="row" ></th>
 
 
         </tr>
@@ -28,11 +28,11 @@
            
 
             <td>{{ c.id }}</td>
-            <td>{{ c.name | uppercase }}</td>
-            <td>{{ c.capital | uppercase }}</td>
-            <td>{{ c.region | uppercase }}</td>
-            <td>{{ c.subRegion | uppercase }}</td>
-            <td>{{ c.area  }}  km2</td>
+            <td>{{ c.name | titlecase }}</td>
+            <td>{{ c.capital | titlecase }}</td>
+            <td>{{ c.region | titlecase }}</td>
+            <td>{{ c.subRegion | titlecase }}</td>
+            <td>{{ c.area }}  km2</td>
             <td>
               
            
@@ -45,5 +45,6 @@
         </ng-container>
       </tbody>
     </table>
+    </div>
   </div>
   
