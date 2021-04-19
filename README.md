@@ -15,10 +15,16 @@ https://hgaspar-country-api.herokuapp.com/country
 
 Com o seguinte mapeamento dos metodos:
 
-METODO           Mapping                Descricão     
-GET              /all                   buscar todos os paises da base
-GET              /{id}                  Buscar País por ID
-POST                                    Salvar um novo país
-PUT                                     Actualizar informacao de um país
-DELETE            /delete/{id}          Remover um país por ID
+METODO    |     Mappin           |    Descricão
+-------------------------------------------------------------------------
+GET       |       /all           |     buscar todos os paises da base   |
+-------------------------------------------------------------------------
+GET       |       /{id}          |     Buscar País por ID               |
+-------------------------------------------------------------------------
+POST      |                      |    Salvar um novo país               |
+-------------------------------------------------------------------------
+PUT       |                      |      Actualizar informacao de um país|
+-------------------------------------------------------------------------
+DELETE    |      /delete/{id}    |      Remover um país por ID          |
+-------------------------------------------------------------------------
 
