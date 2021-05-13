@@ -39,12 +39,12 @@ export class CountryService {
 
   findCountryById(id: number): Observable<ICountry> {
     return this.http.get<ICountry>(
-      apiHost + id  );
+      apiHost +"/"+id  );
   }
 
   public removeCountry(id: number) {
 
-    return   this.http.delete<ICountry>(apiHost+ id);
+    return   this.http.delete<ICountry>(apiHost+"/"+ id);
 
   
 
